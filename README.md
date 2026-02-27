@@ -116,7 +116,7 @@ $$\text{kernelSize} = \max\left(15,\ \max(H \times 0.01,\ W \times 0.01)\right)$
 2. **回溯原图定位**：利用这些像素在暗通道中的坐标，回到原始有雾图像中查找对应位置
 3. **选择最亮点**：在候选像素集合中，选取 RGB 均值最大的那个像素的 RGB 值作为大气光 $A = (A_R, A_G, A_B)$
 
-$$A = \arg\max_{(x,y) \in \text{Top}_{0.1\%}} \frac{I_R(x,y) + I_G(x,y) + I_B(x,y)}{3}$$
+$$A = \arg\max_{(x,y) \in \text{Top 0.1 percent}} \frac{I_R(x,y) + I_G(x,y) + I_B(x,y)}{3}$$
 
 ### 4. 透射率估计
 
