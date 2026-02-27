@@ -1,3 +1,5 @@
+<div align="center">
+
 # Haze Removal: Dark Channel Prior with AVX SIMD Optimization
 
 **基于暗通道先验的图像/视频去雾算法 | AVX 指令集加速优化实现**
